@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Trivia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zUa-0M-NFm">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trivia Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDm-nT-FWz">
+                                        <rect key="frame" x="222" y="28" width="157" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="hoj-vp-soo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="29"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.84313725490196079" green="0.29411764705882354" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="cDm-nT-FWz" secondAttribute="bottom" constant="8" id="CWh-n5-upU"/>
+                                    <constraint firstItem="cDm-nT-FWz" firstAttribute="centerX" secondItem="zUa-0M-NFm" secondAttribute="centerX" id="TJe-mV-dpv"/>
+                                    <constraint firstAttribute="height" constant="70" id="x3K-em-ahQ"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question shows up here." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cY6-cf-JPP">
+                                <rect key="frame" x="0.0" y="70" width="600" height="150"/>
+                                <color key="backgroundColor" red="0.20784313725490194" green="0.29411764705882354" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="771-3R-y18"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" red="0.86274509803921573" green="0.8666666666666667" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RFT-tB-iaC">
+                                <rect key="frame" x="0.0" y="220" width="600" height="380"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLq-Yo-EIV">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="95"/>
+                                        <color key="backgroundColor" red="0.94509803921568625" green="0.2627450980392157" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="21"/>
+                                        <state key="normal" title="Choice 1">
+                                            <color key="titleColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="choseA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xeq-55-VA2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFf-YC-vHr">
+                                        <rect key="frame" x="0.0" y="285" width="600" height="95"/>
+                                        <color key="backgroundColor" red="1" green="0.44313725490196076" blue="0.49411764705882355" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="21"/>
+                                        <state key="normal" title="Choice 4">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="choseD:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xrI-Lk-Z0z"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfx-bb-gy8">
+                                        <rect key="frame" x="0.0" y="95" width="600" height="95"/>
+                                        <color key="backgroundColor" red="0.66274509803921566" green="0.81176470588235294" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="21"/>
+                                        <state key="normal" title="Choice 2">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="choseB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AWY-G5-O5m"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kvc-OA-Wvb">
+                                        <rect key="frame" x="0.0" y="190" width="600" height="95"/>
+                                        <color key="backgroundColor" red="0.4392156862745098" green="0.71764705882352942" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="21"/>
+                                        <state key="normal" title="Choice 3">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="choseC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vNE-Gb-4jd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUR-tL-MVp">
+                                        <rect key="frame" x="0.0" y="-220" width="600" height="600"/>
+                                        <color key="backgroundColor" red="0.85882352939999995" green="0.3294117647" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="29"/>
+                                        <state key="normal" title="Play again?">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playAgainButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rf5-nt-wTh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="hfx-bb-gy8" secondAttribute="trailing" id="5wp-bC-WmQ"/>
+                                    <constraint firstItem="hfx-bb-gy8" firstAttribute="leading" secondItem="RFT-tB-iaC" secondAttribute="leading" id="89R-n9-l20"/>
+                                    <constraint firstItem="gFf-YC-vHr" firstAttribute="top" secondItem="Kvc-OA-Wvb" secondAttribute="bottom" id="H6F-q8-j0z"/>
+                                    <constraint firstAttribute="bottom" secondItem="gFf-YC-vHr" secondAttribute="bottom" id="IfZ-B3-j7Z"/>
+                                    <constraint firstAttribute="trailing" secondItem="gFf-YC-vHr" secondAttribute="trailing" id="J0F-Gr-C9O"/>
+                                    <constraint firstItem="LLq-Yo-EIV" firstAttribute="leading" secondItem="RFT-tB-iaC" secondAttribute="leading" id="OR3-cE-CN3"/>
+                                    <constraint firstItem="Kvc-OA-Wvb" firstAttribute="leading" secondItem="RFT-tB-iaC" secondAttribute="leading" id="QKe-O5-n47"/>
+                                    <constraint firstItem="Kvc-OA-Wvb" firstAttribute="top" secondItem="hfx-bb-gy8" secondAttribute="bottom" id="ZMS-N0-FsK"/>
+                                    <constraint firstItem="hfx-bb-gy8" firstAttribute="height" secondItem="Kvc-OA-Wvb" secondAttribute="height" id="gZh-Q6-0XF"/>
+                                    <constraint firstItem="LLq-Yo-EIV" firstAttribute="height" secondItem="hfx-bb-gy8" secondAttribute="height" id="hih-Bd-bJD"/>
+                                    <constraint firstAttribute="trailing" secondItem="LLq-Yo-EIV" secondAttribute="trailing" id="i95-q8-jFz"/>
+                                    <constraint firstItem="LLq-Yo-EIV" firstAttribute="top" secondItem="RFT-tB-iaC" secondAttribute="top" id="nb0-TZ-7Ff"/>
+                                    <constraint firstItem="gFf-YC-vHr" firstAttribute="leading" secondItem="RFT-tB-iaC" secondAttribute="leading" id="nkc-L7-h1f"/>
+                                    <constraint firstAttribute="trailing" secondItem="Kvc-OA-Wvb" secondAttribute="trailing" id="pdx-Aq-V4r"/>
+                                    <constraint firstItem="Kvc-OA-Wvb" firstAttribute="height" secondItem="gFf-YC-vHr" secondAttribute="height" id="qpp-Lt-4AF"/>
+                                    <constraint firstItem="hfx-bb-gy8" firstAttribute="top" secondItem="LLq-Yo-EIV" secondAttribute="bottom" id="r5V-bT-jLf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zUa-0M-NFm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1Bf-DH-vvd"/>
+                            <constraint firstItem="zUa-0M-NFm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Dax-9K-IGK"/>
+                            <constraint firstItem="cY6-cf-JPP" firstAttribute="top" secondItem="zUa-0M-NFm" secondAttribute="bottom" id="Dqj-Z5-O70"/>
+                            <constraint firstAttribute="trailing" secondItem="RFT-tB-iaC" secondAttribute="trailing" id="JSV-RK-x9a"/>
+                            <constraint firstAttribute="trailing" secondItem="zUa-0M-NFm" secondAttribute="trailing" id="R3Z-ma-HCC"/>
+                            <constraint firstItem="RFT-tB-iaC" firstAttribute="top" secondItem="cY6-cf-JPP" secondAttribute="bottom" id="T61-Kr-IPs"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RFT-tB-iaC" secondAttribute="bottom" id="fHn-L6-hqY"/>
+                            <constraint firstItem="cY6-cf-JPP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fNp-wJ-2IQ"/>
+                            <constraint firstItem="RFT-tB-iaC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kPr-cf-kBe"/>
+                            <constraint firstAttribute="trailing" secondItem="cY6-cf-JPP" secondAttribute="trailing" id="oIq-RL-SBO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="choiceA" destination="LLq-Yo-EIV" id="8uR-un-YHh"/>
+                        <outlet property="choiceB" destination="hfx-bb-gy8" id="0kR-Mz-4Nn"/>
+                        <outlet property="choiceC" destination="Kvc-OA-Wvb" id="kgv-Kg-vjg"/>
+                        <outlet property="choiceD" destination="gFf-YC-vHr" id="Eri-QO-btb"/>
+                        <outlet property="playAgainButton" destination="gUR-tL-MVp" id="620-Ae-etG"/>
+                        <outlet property="questionLabel" destination="cY6-cf-JPP" id="eG1-7w-hpK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="333" y="283"/>
+        </scene>
+    </scenes>
+</document>

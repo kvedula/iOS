@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="RTp-uF-TDr">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--NearbyLocations-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NearbyLocations" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter a search term..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="trO-BQ-DiV">
+                                <rect key="frame" x="20" y="78" width="560" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="uD3-aa-WzV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C28-Go-O46">
+                                <rect key="frame" x="20" y="126" width="560" height="57"/>
+                                <color key="backgroundColor" red="0.88235294117647056" green="0.93333333333333335" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="UEn-dJ-dd2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="Search">
+                                    <color key="titleColor" red="0.0" green="0.30588235294117649" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="lJx-on-bQH" kind="show" id="wLC-Zk-Kja"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="SJu-Rc-bWe">
+                                <rect key="frame" x="-180" y="223" width="960" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="DRk-Sx-KAd"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.27058823529411763" green="0.27058823529411763" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="C28-Go-O46" firstAttribute="top" secondItem="trO-BQ-DiV" secondAttribute="bottom" constant="8" id="EGY-6B-GxX"/>
+                            <constraint firstItem="trO-BQ-DiV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="Jxb-8O-eFX"/>
+                            <constraint firstItem="trO-BQ-DiV" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="XyS-yN-8Aw"/>
+                            <constraint firstItem="C28-Go-O46" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="aja-RB-k28"/>
+                            <constraint firstItem="trO-BQ-DiV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="c01-Lo-0xe"/>
+                            <constraint firstItem="SJu-Rc-bWe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jQd-Gn-C28"/>
+                            <constraint firstItem="SJu-Rc-bWe" firstAttribute="top" secondItem="C28-Go-O46" secondAttribute="bottom" constant="40" id="pYl-gQ-aik"/>
+                            <constraint firstAttribute="trailing" secondItem="C28-Go-O46" secondAttribute="trailing" constant="20" id="vPq-z3-hut"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="NearbyLocations" id="Bw5-kI-v4m"/>
+                    <connections>
+                        <outlet property="searchButton" destination="C28-Go-O46" id="DLA-KS-8yz"/>
+                        <outlet property="searchText" destination="trO-BQ-DiV" id="ZJW-m8-gCE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="313"/>
+        </scene>
+        <!--LocationVC-->
+        <scene sceneID="eam-uG-tg0">
+            <objects>
+                <viewController storyboardIdentifier="Map" id="lJx-on-bQH" customClass="LocationVC" customModule="NearbyLocations" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wgj-Jn-UMU"/>
+                        <viewControllerLayoutGuide type="bottom" id="q3q-v4-0t2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dJ6-rh-Q1G">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="MvG-7U-1Ue">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="q3q-v4-0t2" firstAttribute="top" secondItem="MvG-7U-1Ue" secondAttribute="bottom" id="215-j1-ZKJ"/>
+                            <constraint firstAttribute="trailing" secondItem="MvG-7U-1Ue" secondAttribute="trailing" id="7cK-7Y-BiF"/>
+                            <constraint firstItem="MvG-7U-1Ue" firstAttribute="leading" secondItem="dJ6-rh-Q1G" secondAttribute="leading" id="RF8-pi-I2b"/>
+                            <constraint firstItem="MvG-7U-1Ue" firstAttribute="top" secondItem="Wgj-Jn-UMU" secondAttribute="bottom" id="X3C-p2-ayK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="MvG-7U-1Ue" id="Zs3-B3-oef"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KZ0-1W-Jqr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1724" y="313"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nG7-LP-z0I">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RTp-uF-TDr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vBo-4M-2GG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hSe-AG-JN5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p4H-Wb-kDA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="313"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="map" width="960" height="546"/>
+    </resources>
+</document>
