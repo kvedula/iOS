@@ -135,6 +135,4 @@ class TheClass {
 }
 ```
 
-### Beginner Lessons
-
 
