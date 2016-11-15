@@ -135,6 +135,9 @@ class TheClass {
 }
 ```
 
+<<<<<<< HEAD
 ### Beginner Lessons
 
+=======
+>>>>>>> origin/gh-pages
 
