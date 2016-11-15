@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A239j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Counter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yZa-ZU-uJg">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="90"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Counter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyF-xq-hau">
+                                        <rect key="frame" x="253" y="26" width="94" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="94" id="PU8-eI-dXy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="25"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.058346381556581006" green="0.65093723986985608" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="6NE-ey-fWB"/>
+                                    <constraint firstItem="nyF-xq-hau" firstAttribute="centerY" secondItem="yZa-ZU-uJg" secondAttribute="centerY" id="bQc-Nu-vWn"/>
+                                    <constraint firstItem="nyF-xq-hau" firstAttribute="top" secondItem="yZa-ZU-uJg" secondAttribute="top" constant="26" id="eEA-76-42i"/>
+                                    <constraint firstItem="nyF-xq-hau" firstAttribute="centerX" secondItem="yZa-ZU-uJg" secondAttribute="centerX" id="wka-IV-nJF"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEu-ih-DLL">
+                                <rect key="frame" x="250" y="325" width="100" height="41"/>
+                                <color key="backgroundColor" red="0.0" green="0.64211088418960571" blue="0.97935467958450317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="KfG-rC-92H"/>
+                                    <constraint firstAttribute="width" constant="100" id="cF4-mr-tjT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="20"/>
+                                <state key="normal" title="Count">
+                                    <color key="titleColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickToCount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ypF-R0-Ao6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="###" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NhZ-gU-cYi">
+                                <rect key="frame" x="163" y="143" width="275" height="158"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="275" id="f16-PB-Y9t"/>
+                                    <constraint firstAttribute="height" constant="158" id="z31-Qo-Su2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="75"/>
+                                <color key="textColor" red="0.78475967639593902" green="0.78475967639593902" blue="0.78475967639593902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99019607843137258" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="yZa-ZU-uJg" secondAttribute="trailing" id="63s-Sa-nMX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sEu-ih-DLL" secondAttribute="bottom" constant="234" id="Fcy-Vu-9uW"/>
+                            <constraint firstItem="NhZ-gU-cYi" firstAttribute="centerX" secondItem="sEu-ih-DLL" secondAttribute="centerX" id="IQF-JM-U1a"/>
+                            <constraint firstItem="NhZ-gU-cYi" firstAttribute="top" secondItem="yZa-ZU-uJg" secondAttribute="bottom" constant="53" id="JVz-Z4-b0l"/>
+                            <constraint firstItem="yZa-ZU-uJg" firstAttribute="centerX" secondItem="NhZ-gU-cYi" secondAttribute="centerX" id="Yrh-vg-SJV"/>
+                            <constraint firstItem="yZa-ZU-uJg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nvn-rU-7o8"/>
+                            <constraint firstItem="yZa-ZU-uJg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="o6M-fV-39h"/>
+                            <constraint firstItem="sEu-ih-DLL" firstAttribute="top" secondItem="NhZ-gU-cYi" secondAttribute="bottom" constant="24" id="yec-zu-O26"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="counter" destination="sEu-ih-DLL" id="U31-kX-hyM"/>
+                        <outlet property="number" destination="NhZ-gU-cYi" id="Gbh-94-Ilt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+</document>
